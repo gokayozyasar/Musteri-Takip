@@ -63,12 +63,6 @@
             this.Btn_İstatistik = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tblMusteriBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.oZYASARDataSet = new Ozyasar_Sigorta_Musteri.OZYASARDataSet();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.TxtArama = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.tbl_MusteriTableAdapter = new Ozyasar_Sigorta_Musteri.OZYASARDataSetTableAdapters.Tbl_MusteriTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.musteriKimlikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.musteriAdsoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,6 +71,12 @@
             this.musteriEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.musteriUavtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.musteriSigortaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblMusteriBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.oZYASARDataSet = new Ozyasar_Sigorta_Musteri.OZYASARDataSet();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.TxtArama = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.tbl_MusteriTableAdapter = new Ozyasar_Sigorta_Musteri.OZYASARDataSetTableAdapters.Tbl_MusteriTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -542,6 +542,82 @@
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // musteriKimlikDataGridViewTextBoxColumn
+            // 
+            this.musteriKimlikDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.musteriKimlikDataGridViewTextBoxColumn.DataPropertyName = "MusteriKimlik";
+            this.musteriKimlikDataGridViewTextBoxColumn.FillWeight = 110F;
+            this.musteriKimlikDataGridViewTextBoxColumn.HeaderText = "Kimlik Numarası";
+            this.musteriKimlikDataGridViewTextBoxColumn.Name = "musteriKimlikDataGridViewTextBoxColumn";
+            this.musteriKimlikDataGridViewTextBoxColumn.ReadOnly = true;
+            this.musteriKimlikDataGridViewTextBoxColumn.Width = 159;
+            // 
+            // musteriAdsoyadDataGridViewTextBoxColumn
+            // 
+            this.musteriAdsoyadDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.musteriAdsoyadDataGridViewTextBoxColumn.DataPropertyName = "MusteriAdsoyad";
+            this.musteriAdsoyadDataGridViewTextBoxColumn.FillWeight = 110F;
+            this.musteriAdsoyadDataGridViewTextBoxColumn.HeaderText = "Ad Soyad";
+            this.musteriAdsoyadDataGridViewTextBoxColumn.Name = "musteriAdsoyadDataGridViewTextBoxColumn";
+            this.musteriAdsoyadDataGridViewTextBoxColumn.ReadOnly = true;
+            this.musteriAdsoyadDataGridViewTextBoxColumn.Width = 106;
+            // 
+            // musteriDogumDataGridViewTextBoxColumn
+            // 
+            this.musteriDogumDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.musteriDogumDataGridViewTextBoxColumn.DataPropertyName = "MusteriDogum";
+            this.musteriDogumDataGridViewTextBoxColumn.FillWeight = 110F;
+            this.musteriDogumDataGridViewTextBoxColumn.HeaderText = "Doğum Tarihi";
+            this.musteriDogumDataGridViewTextBoxColumn.Name = "musteriDogumDataGridViewTextBoxColumn";
+            this.musteriDogumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.musteriDogumDataGridViewTextBoxColumn.Width = 137;
+            // 
+            // musteriTelefonDataGridViewTextBoxColumn
+            // 
+            this.musteriTelefonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.musteriTelefonDataGridViewTextBoxColumn.DataPropertyName = "MusteriTelefon";
+            this.musteriTelefonDataGridViewTextBoxColumn.FillWeight = 110F;
+            this.musteriTelefonDataGridViewTextBoxColumn.HeaderText = "Telefon Numarası";
+            this.musteriTelefonDataGridViewTextBoxColumn.Name = "musteriTelefonDataGridViewTextBoxColumn";
+            this.musteriTelefonDataGridViewTextBoxColumn.ReadOnly = true;
+            this.musteriTelefonDataGridViewTextBoxColumn.Width = 168;
+            // 
+            // musteriEmailDataGridViewTextBoxColumn
+            // 
+            this.musteriEmailDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.musteriEmailDataGridViewTextBoxColumn.DataPropertyName = "MusteriEmail";
+            this.musteriEmailDataGridViewTextBoxColumn.FillWeight = 110F;
+            this.musteriEmailDataGridViewTextBoxColumn.HeaderText = "Email Adresi";
+            this.musteriEmailDataGridViewTextBoxColumn.Name = "musteriEmailDataGridViewTextBoxColumn";
+            this.musteriEmailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // musteriUavtDataGridViewTextBoxColumn
+            // 
+            this.musteriUavtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.musteriUavtDataGridViewTextBoxColumn.DataPropertyName = "MusteriUavt";
+            this.musteriUavtDataGridViewTextBoxColumn.FillWeight = 110F;
+            this.musteriUavtDataGridViewTextBoxColumn.HeaderText = "Uavt Kodu";
+            this.musteriUavtDataGridViewTextBoxColumn.Name = "musteriUavtDataGridViewTextBoxColumn";
+            this.musteriUavtDataGridViewTextBoxColumn.ReadOnly = true;
+            this.musteriUavtDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // musteriSigortaDataGridViewTextBoxColumn
+            // 
+            this.musteriSigortaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.musteriSigortaDataGridViewTextBoxColumn.DataPropertyName = "MusteriSigorta";
+            this.musteriSigortaDataGridViewTextBoxColumn.FillWeight = 150F;
+            this.musteriSigortaDataGridViewTextBoxColumn.HeaderText = "Sigorta Bilgisi";
+            this.musteriSigortaDataGridViewTextBoxColumn.Name = "musteriSigortaDataGridViewTextBoxColumn";
+            this.musteriSigortaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // tblMusteriBindingSource
             // 
             this.tblMusteriBindingSource.DataMember = "Tbl_Musteri";
@@ -590,87 +666,12 @@
             // 
             this.tbl_MusteriTableAdapter.ClearBeforeFill = true;
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // musteriKimlikDataGridViewTextBoxColumn
-            // 
-            this.musteriKimlikDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.musteriKimlikDataGridViewTextBoxColumn.DataPropertyName = "MusteriKimlik";
-            this.musteriKimlikDataGridViewTextBoxColumn.FillWeight = 110F;
-            this.musteriKimlikDataGridViewTextBoxColumn.HeaderText = "Kimlik Numarası";
-            this.musteriKimlikDataGridViewTextBoxColumn.Name = "musteriKimlikDataGridViewTextBoxColumn";
-            this.musteriKimlikDataGridViewTextBoxColumn.ReadOnly = true;
-            this.musteriKimlikDataGridViewTextBoxColumn.Width = 174;
-            // 
-            // musteriAdsoyadDataGridViewTextBoxColumn
-            // 
-            this.musteriAdsoyadDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.musteriAdsoyadDataGridViewTextBoxColumn.DataPropertyName = "MusteriAdsoyad";
-            this.musteriAdsoyadDataGridViewTextBoxColumn.FillWeight = 110F;
-            this.musteriAdsoyadDataGridViewTextBoxColumn.HeaderText = "Ad Soyad";
-            this.musteriAdsoyadDataGridViewTextBoxColumn.Name = "musteriAdsoyadDataGridViewTextBoxColumn";
-            this.musteriAdsoyadDataGridViewTextBoxColumn.ReadOnly = true;
-            this.musteriAdsoyadDataGridViewTextBoxColumn.Width = 116;
-            // 
-            // musteriDogumDataGridViewTextBoxColumn
-            // 
-            this.musteriDogumDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.musteriDogumDataGridViewTextBoxColumn.DataPropertyName = "MusteriDogum";
-            this.musteriDogumDataGridViewTextBoxColumn.FillWeight = 110F;
-            this.musteriDogumDataGridViewTextBoxColumn.HeaderText = "Doğum Tarihi";
-            this.musteriDogumDataGridViewTextBoxColumn.Name = "musteriDogumDataGridViewTextBoxColumn";
-            this.musteriDogumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.musteriDogumDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // musteriTelefonDataGridViewTextBoxColumn
-            // 
-            this.musteriTelefonDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.musteriTelefonDataGridViewTextBoxColumn.DataPropertyName = "MusteriTelefon";
-            this.musteriTelefonDataGridViewTextBoxColumn.FillWeight = 110F;
-            this.musteriTelefonDataGridViewTextBoxColumn.HeaderText = "Telefon Numarası";
-            this.musteriTelefonDataGridViewTextBoxColumn.Name = "musteriTelefonDataGridViewTextBoxColumn";
-            this.musteriTelefonDataGridViewTextBoxColumn.ReadOnly = true;
-            this.musteriTelefonDataGridViewTextBoxColumn.Width = 168;
-            // 
-            // musteriEmailDataGridViewTextBoxColumn
-            // 
-            this.musteriEmailDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.musteriEmailDataGridViewTextBoxColumn.DataPropertyName = "MusteriEmail";
-            this.musteriEmailDataGridViewTextBoxColumn.FillWeight = 110F;
-            this.musteriEmailDataGridViewTextBoxColumn.HeaderText = "Email Adresi";
-            this.musteriEmailDataGridViewTextBoxColumn.Name = "musteriEmailDataGridViewTextBoxColumn";
-            this.musteriEmailDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // musteriUavtDataGridViewTextBoxColumn
-            // 
-            this.musteriUavtDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.musteriUavtDataGridViewTextBoxColumn.DataPropertyName = "MusteriUavt";
-            this.musteriUavtDataGridViewTextBoxColumn.FillWeight = 110F;
-            this.musteriUavtDataGridViewTextBoxColumn.HeaderText = "Uavt Kodu";
-            this.musteriUavtDataGridViewTextBoxColumn.Name = "musteriUavtDataGridViewTextBoxColumn";
-            this.musteriUavtDataGridViewTextBoxColumn.ReadOnly = true;
-            this.musteriUavtDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // musteriSigortaDataGridViewTextBoxColumn
-            // 
-            this.musteriSigortaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.musteriSigortaDataGridViewTextBoxColumn.DataPropertyName = "MusteriSigorta";
-            this.musteriSigortaDataGridViewTextBoxColumn.FillWeight = 150F;
-            this.musteriSigortaDataGridViewTextBoxColumn.HeaderText = "Sigorta Bilgisi";
-            this.musteriSigortaDataGridViewTextBoxColumn.Name = "musteriSigortaDataGridViewTextBoxColumn";
-            this.musteriSigortaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1180, 807);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dataGridView1);
@@ -680,6 +681,7 @@
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Sayfa";

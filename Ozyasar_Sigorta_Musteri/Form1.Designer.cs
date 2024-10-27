@@ -39,10 +39,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.login_registerHere = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.login_close = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.login_close = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -164,16 +164,6 @@
             this.panel1.Size = new System.Drawing.Size(358, 602);
             this.panel1.TabIndex = 9;
             // 
-            // login_close
-            // 
-            this.login_close.AutoSize = true;
-            this.login_close.Location = new System.Drawing.Point(765, 9);
-            this.login_close.Name = "login_close";
-            this.login_close.Size = new System.Drawing.Size(23, 25);
-            this.login_close.TabIndex = 10;
-            this.login_close.Text = "X";
-            this.login_close.Click += new System.EventHandler(this.label7_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -205,10 +195,21 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "ÖZYAŞAR SİGORTA";
             // 
+            // login_close
+            // 
+            this.login_close.AutoSize = true;
+            this.login_close.Location = new System.Drawing.Point(765, 9);
+            this.login_close.Name = "login_close";
+            this.login_close.Size = new System.Drawing.Size(23, 25);
+            this.login_close.TabIndex = 10;
+            this.login_close.Text = "X";
+            this.login_close.Click += new System.EventHandler(this.label7_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.login_close);
@@ -225,6 +226,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
